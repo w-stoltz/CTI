@@ -53,6 +53,11 @@ class Index extends React.Component {
                 <p>
                   This is a Cyber Threat Intelligence Proposal as a part of MIS 562. The focus of this analysis is the Transportation Industry and associated systems
                 </p>
+                <p>
+                  Due to Transportation's massive role in almost every individual on the face of the Earth, there are a myriad of threats and factors at play, which have only been magnified due to the rise of technological advancement and development.
+
+                  
+                </p>
                 <ul className="actions">
                   <li><Link to="/generic" className="button">Learn More</Link></li>
                 </ul>
@@ -69,17 +74,17 @@ class Index extends React.Component {
               <li>
                 <span className="image"><img src={truck} alt="" /></span>
                 <h3>Ipsum consequat</h3>
-                <p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+                <p>The Transportation industry is essential for commerce and travel in some capacity in every country across the planet</p>
               </li>
               <li>
               <span className="image"><img src={ship} alt="" /></span>
                 <h3>Amed sed feugiat</h3>
-                <p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+                <p>Logistics, which is a subset of the greater transportation system also plays a key factor in establishing when/where/how goods are transported and delivered to their destinations.</p>
               </li>
               <li>
               <span className="image"><img src={train} alt="" /></span>
                 <h3>Dolor nullam</h3>
-                <p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+                <p>Beyond shipping and logistics, technology is poised to make huge leaps and bounds in the consumer sector.</p>
               </li>
             </ul>
             <footer className="major">
