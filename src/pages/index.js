@@ -6,10 +6,12 @@ import Waypoint from 'react-waypoint'
 
 import Header from '../components/Header'
 import Nav from '../components/Nav'
-import pic01 from '../assets/images/pic01.jpg'
+import pic01 from '../assets/images/drone.png'
 import truck from '../assets/images/icons8-truck-96.png'
 import ship from '../assets/images/ship.png'
 import train from '../assets/images/train.png'
+import will from '../assets/images/will_pic.jpg'
+import marc from '../assets/images/will_pic.jpg'
 
 class Index extends React.Component {
   constructor(props) {
@@ -50,6 +52,9 @@ class Index extends React.Component {
                 <header className="major">
                   <h2>Introduction</h2>
                 </header>
+                <p>
+                “Disclaimer: All content on this site is for educational purposes only
+                </p>
                 <p>
                   This is a Cyber Threat Intelligence Proposal as a part of MIS 562. The focus of this analysis is the Transportation Industry and associated systems
                 </p>
@@ -130,15 +135,28 @@ class Index extends React.Component {
             </footer>
           </section>
 
-          <section id="cta" className="main special">
+
+
+                    <section id="cta" className="main special">
             <header className="major">
               <h2>About Us</h2>
-              <p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-              posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
             </header>
+            <ul className="features">
+              <li>
+                <span className="image"><img src={will} alt="" /></span>
+                <h3>William Stoltz</h3>
+                <p>William is a System Administrator for the Parking & Transportation Services Department at the University of Arizona, he is just past the halfway point of finishing his Masters of Science in Cybersecurity.</p>
+                <p>He is a big fan of weight lifting, sneakers, and technology.</p>
+              </li>
+              <li>
+              <span className="image"><img src={ship} alt="" /></span>
+                <h3>Marc Padilla</h3>
+                <p>TEMP</p>
+              </li>
+
+            </ul>
             <footer className="major">
               <ul className="actions">
-                <li><Link to="/generic" className="button special">Get Started</Link></li>
                 <li><Link to="/generic" className="button">Learn More</Link></li>
               </ul>
             </footer>
