@@ -21,10 +21,19 @@ const Nav = (props) => (
                 </Scroll>
             </li>
             <li>
+                <Scroll type="id" element="diamond">
+                    <a href="#">Diamond Models</a>
+                </Scroll>
+            </li>
+
+
+            <li>
                 <Scroll type="id" element="cta">
                     <a href="#">About Us</a>
                 </Scroll>
             </li>
+
+            
         </Scrollspy>
     </nav>
 )

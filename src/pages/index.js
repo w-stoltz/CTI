@@ -12,6 +12,9 @@ import ship from '../assets/images/ship.png'
 import train from '../assets/images/train.png'
 import will from '../assets/images/will_pic.jpg'
 import marc from '../assets/images/will_pic.jpg'
+import DM1 from '../assets/images/DM/DM1.jpg'
+import DM2 from '../assets/images/DM/DM2.jpg'
+import DM12 from '../assets/images/DM/DM1-2.jpg'
 
 class Index extends React.Component {
   constructor(props) {
@@ -59,7 +62,8 @@ class Index extends React.Component {
                   This is a Cyber Threat Intelligence Proposal as a part of MIS 562. The focus of this analysis is the Transportation Industry and associated systems
                 </p>
                 <p>
-                  Due to Transportation's massive role in almost every individual on the face of the Earth, there are a myriad of threats and factors at play, which have only been magnified due to the rise of technological advancement and development.
+                 
+              Due to Transportation's massive role in almost every individual on the face of the Earth, there are a myriad of threats and factors at play, which have only been magnified due to the rise of technological advancement and development.
 
                   
                 </p>
@@ -78,20 +82,43 @@ class Index extends React.Component {
             <ul className="features">
               <li>
                 <span className="image"><img src={truck} alt="" /></span>
-                <h3>Ipsum consequat</h3>
+                <h3></h3>
                 <p>The Transportation industry is essential for commerce and travel in some capacity in every country across the planet</p>
               </li>
               <li>
               <span className="image"><img src={ship} alt="" /></span>
-                <h3>Amed sed feugiat</h3>
+                <h3></h3>
                 <p>Logistics, which is a subset of the greater transportation system also plays a key factor in establishing when/where/how goods are transported and delivered to their destinations.</p>
               </li>
               <li>
               <span className="image"><img src={train} alt="" /></span>
-                <h3>Dolor nullam</h3>
+                <h3></h3>
                 <p>Beyond shipping and logistics, technology is poised to make huge leaps and bounds in the consumer sector.</p>
               </li>
             </ul>
+            <p>
+            Growth of the transportation industry and market disruptions within the domain of transportation have caused an increase in the use of technology. 
+            <br />
+            <br />
+            These uses include but are not limited to:​
+            <br />
+
+            Resource management​
+            <br />
+
+            Trend identification and market prediction​
+            <br />
+            <br />
+
+            Autonomous vehicle development
+
+            Many technology focused firms, such as Amazon, Google, Apple, and Microsoft, are injecting their own business development processes into the transportation industry.
+
+            </p>
+            
+
+
+
             <footer className="major">
               <ul className="actions">
                 <li><Link to="/generic" className="button">Learn More</Link></li>
@@ -133,6 +160,35 @@ class Index extends React.Component {
                 <li><Link to="/generic" className="button">Learn More</Link></li>
               </ul>
             </footer>
+          </section>
+
+                    <section id="diamond" className="main">
+            <div className="spotlight">
+              <div className="content">
+                <header className="major">
+                  <h2>Diamond Models</h2>
+                </header>
+                <ul className="features">
+              <li>
+                <img src={DM1} alt="" />
+     
+                <img src={DM2} alt="" />
+              </li>
+              <li>
+              
+                
+              </li>
+
+            </ul>
+              </div>
+
+            </div>
+            <ul className="actions">
+                <li><Link to="/diamond" className="button">More Diamond Models</Link></li>
+              </ul>
+
+
+            
           </section>
 
 
