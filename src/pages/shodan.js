@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
-import HeaderGeneric from '../components/diamond'
+import HeaderGeneric from '../components/shodan'
 import pic04 from '../assets/images/pic04.jpg'
 import DM3 from '../assets/images/DM/DM3.jpg'
 import DM4 from '../assets/images/DM/DM4.jpg'
@@ -13,6 +13,7 @@ import DM7 from '../assets/images/DM/DM7.jpg'
 import DM8 from '../assets/images/DM/DM8.jpg'
 import DM9 from '../assets/images/DM/DM9.jpg'
 import DM10 from '../assets/images/DM/DM10.jpg'
+import dns from '../assets/images/dns.png'
 class Generic extends React.Component {
   render() {
 
@@ -31,14 +32,6 @@ class Generic extends React.Component {
           
 
 
-            <span className="image main"><img src={DM3} alt="" /></span>
-            <span className="image main"><img src={DM4} alt="" /></span>
-            <span className="image main"><img src={DM5} alt="" /></span>
-            <span className="image main"><img src={DM6} alt="" /></span>
-            <span className="image main"><img src={DM7} alt="" /></span>
-            <span className="image main"><img src={DM8} alt="" /></span>
-            <span className="image main"><img src={DM9} alt="" /></span>
-            <span className="image main"><img src={DM10} alt="" /></span>
 
                         <footer className="major">
               <ul className="actions">

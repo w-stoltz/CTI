@@ -15,14 +15,17 @@ const Nav = (props) => (
                     <a href="#">Industry Background</a>
                 </Scroll>
             </li>
+
             <li>
-                <Scroll type="id" element="second">
+                <Scroll type="id" element="diamond">
                     <a href="#">Threat Modelling</a>
                 </Scroll>
             </li>
+
+            
             <li>
-                <Scroll type="id" element="diamond">
-                    <a href="#">Diamond Models</a>
+                <Scroll type="id" element="data">
+                    <a href="#">Data</a>
                 </Scroll>
             </li>
 
@@ -32,6 +35,8 @@ const Nav = (props) => (
                     <a href="#">About Us</a>
                 </Scroll>
             </li>
+
+            
 
             
         </Scrollspy>

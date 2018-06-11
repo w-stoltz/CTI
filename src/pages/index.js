@@ -11,10 +11,16 @@ import truck from '../assets/images/icons8-truck-96.png'
 import ship from '../assets/images/ship.png'
 import train from '../assets/images/train.png'
 import will from '../assets/images/will_pic.jpg'
-import marc from '../assets/images/will_pic.jpg'
+import marc from '../assets/images/marc_pic.png'
 import DM1 from '../assets/images/DM/DM1.jpg'
 import DM2 from '../assets/images/DM/DM2.jpg'
 import DM12 from '../assets/images/DM/DM1-2.jpg'
+import CAI from '../assets/images/CAI.png'
+
+import censys from '../assets/images/censys.png'
+import shodan from '../assets/images/shodan.png'
+import phishtank from '../assets/images/phishtank.png'
+import kali from '../assets/images/kali.png'
 
 class Index extends React.Component {
   constructor(props) {
@@ -67,15 +73,13 @@ class Index extends React.Component {
 
                   
                 </p>
-                <ul className="actions">
-                  <li><Link to="/generic" className="button">Learn More</Link></li>
-                </ul>
+
               </div>
               <span className="image"><img src={pic01} alt="" /></span>
             </div>
           </section>
 
-          <section id="first" className="main special">
+          <section id="first" className="main">
             <header className="major">
               <h2>Industry Background</h2>
             </header>
@@ -115,80 +119,239 @@ class Index extends React.Component {
             Many technology focused firms, such as Amazon, Google, Apple, and Microsoft, are injecting their own business development processes into the transportation industry.
 
             </p>
+            <header className="major">
+              <h2>Threat Trends</h2>
+              <p>There are many trends at play with threats both local and global, with many different actors, systems, and pieces of infrastructure involved.
+
+              </p>
+            </header>
+                            <p>
+                  Among these trends, some relevant ones are:
+                  <br />
+
+
+                Data Breaches​
+                <br />
+
+                Ransomware
+                <br />​
+
+                Cyber-Physical Attacks
+                <br />
+                <br />
+
+                Unavailability of IT systems and networks to support critical business processes.​
+                <br />
+                Breach of personal information, payment card information, and intellectual property.​
+                <br />
+                Criminal, disruption of critical infrastructure, physical asset damage, loss of life.​
+                <br />
+                Disgruntled employee or customer.​
+                <br />
+                Untargeted malicious code, random selection.
+                test
+                <br />
+                <br />
+                <header className="major">
+
+                <h2 classname="major">Global Threat Trends</h2>
+                </header>
+
+                <p>
+                Extortion via Ransomware​:
+                <br />
+
+2018 Verizon Data Breach Investigations Report has ransomware in the top five action varieties in incidents.​
+<br />
+<br />
+Exploitation for Crypto-Currency Mining (Crypto-Jacking)​:
+<br />
+Trend Micro reports seeing ransomware variants repurposed for crypto-jacking.​
+<br />
+<br />
+Distributed Denial of Service (DDoS) Attacks​:
+<br />
+Poland's National Airline has been the victim of a DDoS attack and Security Intelligence reports on the over-all increase in such attacks in Q1 2018.​
+<br />
+<br />
+Payment Card Data Breaches​:
+<br />
+Payment card data breaches have already affected Delta Airlines in 2018.
+<br />
+<br />
+
+                  <header className="major">
+
+                  <h2 classname="major">Local Threat Trends</h2>
+                </header>
+                Rising Threat Target: Vehicles​
+                <br />
+                <br />
+As vehicles integrate more technology they become more attractive and accessible targets for cyber-attacks. This has already cause firms to realign their resources with the new threats.​
+<br />
+Tesla CEO Elon Musk has stated that preventing a 'fleet-wide hack' is Tesla's top security priority.​
+<br />
+Components of vehicles have increased digital connectivity as well and face similar attacks. ​
+<br />
+As early as 2010, researchers were able to hack a vehicle through Bluetooth tire pressure gauges.​
+<br />
+​
+
+
+                  </p>
+
+
+                  </p>
             
 
 
 
             <footer className="major">
-              <ul className="actions">
-                <li><Link to="/generic" className="button">Learn More</Link></li>
-              </ul>
+
             </footer>
           </section>
 
-          <section id="second" className="main special">
-            <header className="major">
-              <h2>Threat Modelling</h2>
-              <p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-              posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+
+ <section id="diamond" className="main">
+          <header className="major">
+          <h2>Threat Modelling</h2>
+          <p> 
+            Modelling potential/past threats can help predict future issues and problems and cna help safeguard exposed systems. By predicting attack scenarioos we can better address controls rather than play catch up and cleaning up afterwards.
+          </p>
+
             </header>
-            <ul className="statistics">
-              <li className="style1">
-                <span className="icon fa-code-fork"></span>
-                <strong>5,120</strong> Etiam
-              </li>
-              <li className="style2">
-                <span className="icon fa-folder-open-o"></span>
-                <strong>8,192</strong> Magna
-              </li>
-              <li className="style3">
-                <span className="icon fa-signal"></span>
-                <strong>2,048</strong> Tempus
-              </li>
-              <li className="style4">
-                <span className="icon fa-laptop"></span>
-                <strong>4,096</strong> Aliquam
-              </li>
-              <li className="style5">
-                <span className="icon fa-diamond"></span>
-                <strong>1,024</strong> Nullam
-              </li>
-            </ul>
-            <p className="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
-            <footer className="major">
-              <ul className="actions">
-                <li><Link to="/generic" className="button">Learn More</Link></li>
-              </ul>
-            </footer>
-          </section>
 
-                    <section id="diamond" className="main">
-            <div className="spotlight">
-              <div className="content">
-                <header className="major">
-                  <h2>Diamond Models</h2>
-                </header>
-                <ul className="features">
-              <li>
-                <img src={DM1} alt="" />
-     
-                <img src={DM2} alt="" />
-              </li>
-              <li>
-              
-                
-              </li>
+                      <header className="major">
+          <h2>Critical Asset Identification</h2>
 
-            </ul>
-              </div>
+            </header>
+            <span className="image main"><img src={CAI} alt="" /></span>
+          
+            <header className="major">
+          <h2>Diamond Models</h2>
 
-            </div>
-            <ul className="actions">
+            </header>
+
+
+            <span className="image main"><img src={DM1} alt="" /></span>
+            <span className="image main"><img src={DM2} alt="" /></span>
+
+
+                        <footer className="major">
+        <ul className="actions">
                 <li><Link to="/diamond" className="button">More Diamond Models</Link></li>
               </ul>
+            </footer>
+            
 
+            <p>
+            <header className="major">
+          <h2>Intelligence Buy-In</h2>
+
+
+            </header>
+            Transportation corporations increasingly rely on the connectivity of their critical assets to a hostile global network.​
+            <br />
+            <br />
+Transportation firms are regularly compromised as part of blanket hacking campaigns as well as targeted nation-state attacks.​
+<br />
+<br />
+Millions of dollars and customer loyalty has been lost from firms suffering breaches and service outages.​
+<br />
+<br />
+Attacks WILL happen but there ARE actionable items that can make a positive difference in transportation security!
+<br />
+<br />
+<br />
+<h2>Prevention is ideal, but detection is a must!</h2>​
+<br />
+As a result, steps must be taken to properly safeguard systems, such as:
+<br />
+Invest in logging and detection systems.​
+<br />
+
+Create baseline levels of activity and audit regularly.​
+<br />
+
+Actively hunt for threats on your networks; Do not wait for indicators of compromise.​
+<br />
+
+Accept that breaches will happen and that good cyber security hygiene will minimize their impact on you, your customers, and your industry.
+              </p>
 
             
+          </section>
+
+                              <section id="data" className="main">
+            <header className="major">
+              <h2>Data</h2>
+            </header>
+            <header className="minor">
+          <h2>Kali Linux</h2>
+          </header>
+          <p>
+          Linux distribution with tools for host enumeration. Will use to attempt to gather specific targets.
+
+          <span className="image main"><img src={kali} alt="" /></span>
+          <Link to="/kali" className="button">Kali Linux Data and More Info</Link>
+            </p>
+
+          <header className="minor">
+          <h2>Censys</h2>
+          </header>
+          <p>
+          ARIN used to identify IP address blocks of specific transportation industry corporations
+          <br />
+          <br />
+          Retains information on node services as well as geographical locations, when used with IP address blocks, such as COSCO's, it can be useful for targeting specific offices.
+          <br />
+          Physical locations could play a larger role with transportation when compared with other industries. Transportation inherently signals a source and destination and attempts to disrupt transit often use this to target attacks.
+          
+          <span className="image main"><img style ={{width: 50%}} src={censys} alt="" /></span>
+          
+          <Link to="/censys" className="button">Censys Data and More Info</Link>
+            </p>
+
+          <p className="main special">
+          test
+          </p>
+
+    
+
+          <header className="minor">
+          <h2>Shodan</h2>
+          </header>
+          <p>
+          Identify transportation industry network hosts that have services exposed to the public internet.
+
+          
+          <Link to="/shodan" className="button">Shodan Data and More Info</Link>
+            </p>
+
+
+
+          <header className="minor">
+          <h2>Exploit Database</h2>
+          </header>
+          <p>
+          Used with information gathered about target organizations. In this case, a closer look at COSCO and its publicly accessible resources my reveal exploitable services
+          <br />
+          <br />
+          <Link to="/exploit" className="button">Exploit Database Data and More Info</Link>
+            </p>
+
+          <header className="minor">
+          <h2>PhishTank</h2>
+          </header>
+          <p>
+          Used to report, identify, and distribute information about past phishing sites masquerading as legitimate ones. Airline phishing is among the most common relating to the Transportation industry.
+          <span className="image main"><img src={phishtank} alt="" /></span>
+          <Link to="/phishtank" className="button">PhishTank Data and More Info</Link>
+            </p>
+ 
+            <footer className="major">
+
+            </footer>
           </section>
 
 
@@ -202,19 +365,21 @@ class Index extends React.Component {
                 <span className="image"><img src={will} alt="" /></span>
                 <h3>William Stoltz</h3>
                 <p>William is a System Administrator for the Parking & Transportation Services Department at the University of Arizona, he is just past the halfway point of finishing his Masters of Science in Cybersecurity.</p>
-                <p>He is a big fan of weight lifting, sneakers, and technology.</p>
+                
+                <p>Role:
+                <br /> Industry Background, Relevant Threat Trends, CTI Platform Website, 5 of 10 Diamond Models </p>
               </li>
               <li>
-              <span className="image"><img src={ship} alt="" /></span>
+              <span className="image"><img src={marc} alt="" /></span>
                 <h3>Marc Padilla</h3>
-                <p>TEMP</p>
+                <p>Marc Padilla is a Senior Managing Consultant at Kroll Cyber Security and performs digital forensics and incident response for data breach investigations and cyber security engagements. He has recently started pursuing his Masters in Cybersecurity</p>
+                <p>Role: 
+                <br />Relevant Global Threat Trends, Relevant Local Threat Trends, Critical Asset Identification, 5 of 10 Diamond Models, Intelligence Buy-In</p>
               </li>
 
             </ul>
             <footer className="major">
-              <ul className="actions">
-                <li><Link to="/generic" className="button">Learn More</Link></li>
-              </ul>
+
             </footer>
           </section>
 
