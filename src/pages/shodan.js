@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
-import HeaderGeneric from '../components/shodan'
+import HeaderShodan from '../components/shodan'
 import pic04 from '../assets/images/pic04.jpg'
 import DM3 from '../assets/images/DM/DM3.jpg'
 import DM4 from '../assets/images/DM/DM4.jpg'
@@ -18,14 +18,14 @@ import shodan from '../assets/images/shodan.png'
 import shodanmap from '../assets/images/coscomap.png'
 import Typography from "typography";
 
-class Generic extends React.Component {
+class Shodan extends React.Component {
   render() {
 
     return (
       <div>
         <Helmet title={get(this, 'props.data.site.siteMetadata.title')} />
 
-        <HeaderGeneric />
+        <HeaderShodan />
         <div id="main">
           <section id="content" className="main">
           <footer className="major">
@@ -88,10 +88,10 @@ class Generic extends React.Component {
   }
 }
 
-export default Generic
+export default Shodan
 
 export const pageQuery = graphql`
-  query GenericQuery {
+  query ShodanQuery {
     site {
       siteMetadata {
         title

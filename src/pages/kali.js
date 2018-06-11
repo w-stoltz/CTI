@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
-import HeaderGeneric from '../components/kali'
+import HeaderKali from '../components/kali'
 import pic04 from '../assets/images/pic04.jpg'
 import DM3 from '../assets/images/DM/DM3.jpg'
 import DM4 from '../assets/images/DM/DM4.jpg'
@@ -15,14 +15,14 @@ import DM9 from '../assets/images/DM/DM9.jpg'
 import dns from '../assets/images/dns.png'
 import Typography from "typography";
 
-class Generic extends React.Component {
+class Kali extends React.Component {
   render() {
 
     return (
       <div>
         <Helmet title={get(this, 'props.data.site.siteMetadata.title')} />
 
-        <HeaderGeneric />
+        <HeaderKali />
         <div id="main">
           <section id="content" className="main">
           <footer className="major">
@@ -74,10 +74,10 @@ class Generic extends React.Component {
   }
 }
 
-export default Generic
+export default Kali
 
 export const pageQuery = graphql`
-  query GenericQuery {
+  query KaliQuery {
     site {
       siteMetadata {
         title

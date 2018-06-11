@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
-import HeaderGeneric from '../components/phishtank'
+import HeaderPhish from '../components/phishtank'
 import pic04 from '../assets/images/pic04.jpg'
 import DM3 from '../assets/images/DM/DM3.jpg'
 import DM4 from '../assets/images/DM/DM4.jpg'
@@ -16,14 +16,14 @@ import DM10 from '../assets/images/DM/DM10.jpg'
 import phish_data from '../assets/images/phish_data.png'
 import Typography from "typography";
 
-class Generic extends React.Component {
+class Phish extends React.Component {
   render() {
 
     return (
       <div>
         <Helmet title={get(this, 'props.data.site.siteMetadata.title')} />
 
-        <HeaderGeneric />
+        <HeaderPhish />
         <div id="main">
           <section id="content" className="main">
           <footer className="major">
@@ -86,10 +86,10 @@ class Generic extends React.Component {
   }
 }
 
-export default Generic
+export default Phish
 
 export const pageQuery = graphql`
-  query GenericQuery {
+  query PhishQuery {
     site {
       siteMetadata {
         title

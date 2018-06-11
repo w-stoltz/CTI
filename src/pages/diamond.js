@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
-import HeaderGeneric from '../components/diamond'
+import HeaderDiamond from '../components/diamond'
 import pic04 from '../assets/images/pic04.jpg'
 import DM3 from '../assets/images/DM/DM3.jpg'
 import DM4 from '../assets/images/DM/DM4.jpg'
@@ -15,14 +15,14 @@ import DM9 from '../assets/images/DM/DM9.jpg'
 import Typography from "typography";
 
 import DM10 from '../assets/images/DM/DM10.jpg'
-class Generic extends React.Component {
+class Diamond extends React.Component {
   render() {
 
     return (
       <div>
         <Helmet title={get(this, 'props.data.site.siteMetadata.title')} />
 
-        <HeaderGeneric />
+        <HeaderDiamond />
         <div id="main">
           <section id="content" className="main">
           <footer className="major">
@@ -58,10 +58,10 @@ class Generic extends React.Component {
   }
 }
 
-export default Generic
+export default Diamond
 
 export const pageQuery = graphql`
-  query GenericQuery {
+  query DiamondQuery {
     site {
       siteMetadata {
         title
