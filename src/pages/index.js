@@ -3,6 +3,8 @@ import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Waypoint from 'react-waypoint'
+import Typography from "typography";
+
 
 import Header from '../components/Header'
 import Nav from '../components/Nav'
@@ -16,7 +18,7 @@ import DM1 from '../assets/images/DM/DM1.jpg'
 import DM2 from '../assets/images/DM/DM2.jpg'
 import DM12 from '../assets/images/DM/DM1-2.jpg'
 import CAI from '../assets/images/CAI.png'
-
+import shodan_ss from '../assets/images/shodan_ss.png'
 import censys from '../assets/images/censys.png'
 import shodan from '../assets/images/shodan.png'
 import phishtank from '../assets/images/phishtank.png'
@@ -290,9 +292,41 @@ Accept that breaches will happen and that good cyber security hygiene will minim
           <h2>Kali Linux</h2>
           </header>
           <p>
-          Linux distribution with tools for host enumeration. Will use to attempt to gather specific targets.
+          Linux distribution with tools for host enumeration, used to attempt to gather specific targets.
+          <br />
+          <br />
 
-          <span className="image main"><img src={kali} alt="" /></span>
+          <h3>Usability</h3>
+
+          Determine IP Address of public website, <a href="www.cosco-usa.com​">www.cosco-usa.com​</a><br />
+
+63.247.189.134​<br /><br />
+
+Lookup IP address on ARIN.​<br />
+
+<a href="https://whois.arin.net/rest/net/NET-63-247-189-0-1/pft?s=63.247.189.134">https://whois.arin.net/rest/net/NET-63-247-189-0-1/pft?s=63.247.189.134</a><br />
+Cosco owns 63.247.189.0/24 block.​<br /><br />
+
+Attempt DNS Zone Transfer using dig against name servers.​<br />
+
+Blocked by firewall (no TCP/53 response)​<br />
+
+Although DNS queries are over UDP, zone transfers are over TCP. Default deny of TCP on port 53 was detected.​<br /><br />
+
+One name server is on a different block. Lookup on ARIN, part of 12.31.211.64/27. Add this block to targets.<br />
+
+          <h3>Results</h3>
+
+          <span className="image main"><img style={{ margin: '3rem auto', width: 600}} src={kali} alt="" /></span>
+          Remote administration services are accessible over the public internet.​
+          <br />
+
+          Unencrypted administration information may be gathered on the telnet service.​
+          <br />
+
+          Files for information may be available on the FTP share.
+          <br />
+          <br />
           <Link to="/kali" className="button">Kali Linux Data and More Info</Link>
             </p>
 
@@ -307,14 +341,12 @@ Accept that breaches will happen and that good cyber security hygiene will minim
           <br />
           Physical locations could play a larger role with transportation when compared with other industries. Transportation inherently signals a source and destination and attempts to disrupt transit often use this to target attacks.
           
-          <span className="image main"><img style ={{width: 50%}} src={censys} alt="" /></span>
+          <span className="image main"><img style={{ margin: '3rem auto', width: 600}} src={censys} alt="" /></span>
           
-          <Link to="/censys" className="button">Censys Data and More Info</Link>
+          
             </p>
 
-          <p className="main special">
-          test
-          </p>
+       
 
     
 
@@ -322,7 +354,20 @@ Accept that breaches will happen and that good cyber security hygiene will minim
           <h2>Shodan</h2>
           </header>
           <p>
-          Identify transportation industry network hosts that have services exposed to the public internet.
+          Identify transportation industry network hosts that have services exposed to the public internet.<br />
+
+
+          One host from our earlier scan identified 63.247.189.119 as having port 3389/TCP open. This port is commonly used for Windows Remote Desktop Connection and commonly brute forced by attackers. We can use Shodan to gather more information about this host.​<br />
+          <br />
+
+          <a href="https://www.shodan.io/host/63.247.189.119">https://www.shodan.io/host/63.247.189.119</a><br />
+
+          
+
+          Reveals that port 80 and 443 are also open, indicating a web server.​<br />
+          <span className="image main"><img style={{ margin: '3rem auto', width: 800}} src={shodan_ss} alt="" /></span>
+
+          Navigate to the host using a web browser.​<br />
 
           
           <Link to="/shodan" className="button">Shodan Data and More Info</Link>
@@ -330,22 +375,26 @@ Accept that breaches will happen and that good cyber security hygiene will minim
 
 
 
-          <header className="minor">
-          <h2>Exploit Database</h2>
-          </header>
-          <p>
-          Used with information gathered about target organizations. In this case, a closer look at COSCO and its publicly accessible resources my reveal exploitable services
-          <br />
-          <br />
-          <Link to="/exploit" className="button">Exploit Database Data and More Info</Link>
-            </p>
+
 
           <header className="minor">
           <h2>PhishTank</h2>
           </header>
           <p>
-          Used to report, identify, and distribute information about past phishing sites masquerading as legitimate ones. Airline phishing is among the most common relating to the Transportation industry.
-          <span className="image main"><img src={phishtank} alt="" /></span>
+
+          PhishTank is a crowd-sourced repository of websites and addresses attempting to pretend to be a site they aren't. ​
+          <br />
+
+          Most commonly sent as links inside of emails from malicious attackers, they are attempting to have users input their information and then use it for their own devices.​
+          <br />
+
+​
+<br />
+          <div style={{margin: '3rem auto'}}> PhishTank gathers active/inactive phishing URLs and makes them available as well as a preview of what the live sites look like.</div>
+          <span className="image main"><img style={{ margin: '3rem auto', width: 600}} src={phishtank} alt="" /></span>
+          Example: Currently online phishing site pretending to be a Delta Airlines website prompting for login information.
+          <br />
+          <br />
           <Link to="/phishtank" className="button">PhishTank Data and More Info</Link>
             </p>
  
@@ -367,14 +416,14 @@ Accept that breaches will happen and that good cyber security hygiene will minim
                 <p>William is a System Administrator for the Parking & Transportation Services Department at the University of Arizona, he is just past the halfway point of finishing his Masters of Science in Cybersecurity.</p>
                 
                 <p>Role:
-                <br /> Industry Background, Relevant Threat Trends, CTI Platform Website, 5 of 10 Diamond Models </p>
+                <br /> Industry Background, Relevant Threat Trends, CTI Platform Website, 5 of 10 Diamond Models, Data Gathering/Analysis </p>
               </li>
               <li>
               <span className="image"><img src={marc} alt="" /></span>
                 <h3>Marc Padilla</h3>
                 <p>Marc Padilla is a Senior Managing Consultant at Kroll Cyber Security and performs digital forensics and incident response for data breach investigations and cyber security engagements. He has recently started pursuing his Masters in Cybersecurity</p>
                 <p>Role: 
-                <br />Relevant Global Threat Trends, Relevant Local Threat Trends, Critical Asset Identification, 5 of 10 Diamond Models, Intelligence Buy-In</p>
+                <br />Relevant Global Threat Trends, Relevant Local Threat Trends, Critical Asset Identification, 5 of 10 Diamond Models, Intelligence Buy-In, Data Gathering/Analysis</p>
               </li>
 
             </ul>

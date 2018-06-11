@@ -1,6 +1,6 @@
 import React from 'react'
 
-const HeaderGeneric = (props) => (
+const HeaderShodan = (props) => (
     <header id="header">
         <h1>Shodan</h1>
         <p>
@@ -10,4 +10,4 @@ const HeaderGeneric = (props) => (
     </header>
 )
 
-export default HeaderGeneric
+export default HeaderShodan

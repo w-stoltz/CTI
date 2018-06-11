@@ -13,6 +13,8 @@ import DM7 from '../assets/images/DM/DM7.jpg'
 import DM8 from '../assets/images/DM/DM8.jpg'
 import DM9 from '../assets/images/DM/DM9.jpg'
 import dns from '../assets/images/dns.png'
+import Typography from "typography";
+
 class Generic extends React.Component {
   render() {
 
@@ -29,7 +31,28 @@ class Generic extends React.Component {
               </ul>
             </footer>
 
-            <span className="image main"><img src={dns} alt="" /></span>
+            <p>
+            <h2>Data Source: Kali Linux​</h2>
+            Kali Linux is a Linux distribution that comes with many information gathering tools installed. 
+            It was selected as an OSINT data source for its domain name service (DNS) tools specifically. 
+            We will use those tools to identify systems and services that may be targeted by attackers.
+            <br />
+            <br />
+
+            <h2>Data Collection​</h2>
+            Data collection will be done using bash in a virtual instance of Kali Linux. Analysis will be done using text editors, basic command line tools, and Python.
+
+            <h2>CTI Value</h2>​
+
+            Kali Linux will help identify public facing infrastructure that may be targeted by attackers.
+              </p>
+
+              
+                <h2>Data</h2>
+
+            <span className="image main"><img style={{ width: 300, height: 900}} src={dns} alt="" /></span>
+
+            
           
 
 

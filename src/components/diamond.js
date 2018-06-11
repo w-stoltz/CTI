@@ -1,6 +1,6 @@
 import React from 'react'
 
-const HeaderGeneric = (props) => (
+const HeaderDiamond = (props) => (
     <header id="header">
         <h1>Diamond Models</h1>
         <p>
@@ -10,4 +10,4 @@ const HeaderGeneric = (props) => (
     </header>
 )
 
-export default HeaderGeneric
+export default HeaderDiamond

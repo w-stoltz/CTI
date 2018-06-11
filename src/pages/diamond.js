@@ -12,6 +12,8 @@ import DM6 from '../assets/images/DM/DM6.jpg'
 import DM7 from '../assets/images/DM/DM7.jpg'
 import DM8 from '../assets/images/DM/DM8.jpg'
 import DM9 from '../assets/images/DM/DM9.jpg'
+import Typography from "typography";
+
 import DM10 from '../assets/images/DM/DM10.jpg'
 class Generic extends React.Component {
   render() {
