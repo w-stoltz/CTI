@@ -109,7 +109,7 @@ class Index extends React.Component {
             These uses include but are not limited to:​
             <br />
 
-            Resource management​
+            Resources and management​
             <br />
 
             Trend identification and market prediction​
